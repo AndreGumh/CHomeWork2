@@ -7,7 +7,7 @@
 Console.WriteLine("Введите число");
 double a = Convert.ToDouble(Console.ReadLine());
 double b = 1;
-int c = 0;
+int c = 1;
 
 if (a < 1)
 {
@@ -17,7 +17,7 @@ if (a < 1)
         b = a % 1;
         c++;
     }
-    Console.WriteLine(c);
+    Console.WriteLine($"Количество цифр в числе равно {c}");
 }
 else
 {
@@ -27,13 +27,25 @@ else
         b = a % 1;
         c++;
     }
-    if (a<100)
+    b = a % 10;
+    if (b != 0)
     {
-        while (b != 0)
+        while (a != 0)
         {
-            b = a % 10;
+            a = a % 10;
             c++;
+            break;
+        }
+        c++;
+    }
+    else
+    {
+        while (a != 0)
+        {
+            a = a % 10;
+            c++;
+            break;
         }
     }
-    Console.WriteLine(c);
+    Console.WriteLine($"Количество цифр в числе равно {c}");
 }
