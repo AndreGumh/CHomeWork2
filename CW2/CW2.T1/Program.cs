@@ -16,3 +16,5 @@ else if (digit1 == digit2)
     System.Console.WriteLine("Обе цифры этого ичсла равны");
 else
     System.Console.WriteLine($"Наибольшая цифра этого ичсла это {digit2}");
+for (int i = 0; i < 11; i++)
+    Console.Write($"{i} ");
