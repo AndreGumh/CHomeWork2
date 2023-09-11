@@ -30,6 +30,7 @@ else
     b = a % 10;
     if (b != 0)
     {
+        Console.WriteLine(a);
         while (a != 0)
         {
             a = a % 10;
@@ -40,12 +41,13 @@ else
     }
     else
     {
-        while (a != 0)
+        Console.WriteLine(a);
+        while (a > 1)
         {
-            a = a % 10;
+            a = a / 10;
             c++;
-            break;
         }
+        c = c-1;
     }
     Console.WriteLine($"Количество цифр в числе равно {c}");
 }
