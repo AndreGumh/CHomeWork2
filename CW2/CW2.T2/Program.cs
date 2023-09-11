@@ -6,7 +6,7 @@
 // 782 -> 72
 // 918 -> 98
 
-int num = new Random().Next(100,1000);
+int num = new Random().Next(100, 1000);
 System.Console.WriteLine($"Сгенерировано число {num}");
 int a = num / 100;
 int b = num % 10;
