@@ -12,13 +12,17 @@ while (b != 0)
     b = b / 10;
     i++;
 }
-if (i < 2)
+if (i <= 2)
 {
     System.Console.WriteLine("Третьей цифры в числе нет");
 }
 else
 {
-    num = num - Convert.ToInt32(Math.Pow(10, i-2)) * (num / Convert.ToInt32(Math.Pow(10, i-2)));
-    num = num / Convert.ToInt32(Math.P)
+  while (i != 3)
+    {
+        num = num / 10;
+        i--;
+    }
+    num = num % 10;
+    System.Console.WriteLine(num);  
 }
-System.Console.WriteLine(num);
